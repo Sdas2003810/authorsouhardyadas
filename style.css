@@ -79,4 +79,26 @@ nav {
 .wave-emoji.wave {
   animation: wave 2s ease-in-out;
 }
+#books .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* responsive columns */
+  gap: 1.5rem;
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+#books .grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#books .grid img {
+  width: 160px;
+  height: auto;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
 
