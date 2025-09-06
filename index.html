@@ -22,16 +22,20 @@
     </button>
     <!-- Navbar links, normal view -->
     <ul class="hidden md:flex space-x-6 text-lg">
-      <li><a href="#home" class="hover:text-green-700">Home</a></li>
-      <li><a href="#books" class="hover:text-green-700">Books</a></li>
-      <li><a href="#journal" class="hover:text-green-700">Journal</a></li>
+      <li><a href="#home" class="text-green-800 hover:text-green-900 transition-colors duration-300">Home</a></li>
+
+      <li><a href="#books" class="text-green-800 hover:text-green-900 transition-colors duration-300">Books</a></li>
+<li><a href="#journal" class="text-green-800 hover:text-green-900 transition-colors duration-300">Journal</a></li>
+
     </ul>
   </div>
   <!-- Mobile menu, appears when hamburger is clicked -->
   <ul x-show="open" class="md:hidden mt-2 space-y-2 text-lg bg-white border-t border-gray-200 px-2 py-4">
-    <li><a href="#home" class="block w-full hover:text-green-700">Home</a></li>
-    <li><a href="#books" class="block w-full hover:text-green-700">Books</a></li>
-    <li><a href="#journal" class="block w-full hover:text-green-700">Journal</a></li>
+    <li><a href="#home" class="block w-full text-green-800 hover:text-green-900 transition-colors duration-300">Home</a></li>
+
+    <li><a href="#books" class="block w-full text-green-800 hover:text-green-900 transition-colors duration-300">Books</a></li>
+<li><a href="#journal" class="block w-full text-green-800 hover:text-green-900 transition-colors duration-300">Journal</a></li>
+
   </ul>
 </nav>
 
@@ -39,9 +43,17 @@
   <section id="home" class="flex flex-col items-center py-12 px-4 max-w-5xl mx-auto">
 
  <img src="resources/profile pic.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full shadow-lg mb-4">
-    <h1 class="text-4xl font-serif text-green-900 mb-2">Souhardya Das</h1>
-    <p class="text-lg max-w-xl text-center font-sans">I'm Souhardya Das, a physics and math student. Academics have taught me how to think carefully, solve problems step by step, and really care about getting things right—which is how I approach my creative projects too.
-Besides academics, I've started writing fiction on <a href="https://www.wattpad.com" class="text-green-800 underline">Wattpad</a>. I like to focus on character-driven horror with a strong atmosphere. To me, science and storytelling are both just ways to explore complicated stuff. One uses logic, and the other uses imagination and real-life experiences.</p>
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-serif text-green-900 mb-6">Souhardya Das</h1>
+
+ <p class="text-base md:text-lg max-w-xl text-center font-sans leading-relaxed mb-6 text-gray-900">
+  I'm Souhardya Das, a physics and math student. Academics have taught me how to think carefully, solve problems step by step, and really care about getting things right—which is how I approach my creative projects too.
+  Besides academics, I've started writing fiction on 
+  <a href="https://www.wattpad.com" class="text-green-800 underline hover:text-green-900 transition-colors duration-300">
+    Wattpad
+  </a>. 
+  I like to focus on character-driven horror with a strong atmosphere. To me, science and storytelling are both just ways to explore complicated stuff. One uses logic, and the other uses imagination and real-life experiences.
+</p>
+
   </section>
 
   <section id="books" class="py-12 px-4 bg-gray-50 max-w-5xl mx-auto rounded-xl shadow-lg">
@@ -63,7 +75,10 @@ Besides academics, I've started writing fiction on <a href="https://www.wattpad.
     <div class="max-w-2xl mx-auto space-y-8">
       <article class="border-b pb-6">
         <h3 class="text-xl font-serif text-green-800 mb-2">First Wattpad Story Published!</h3>
-        <p class="text-base font-sans text-gray-700">I’m stepping into the dark with my very first Wattpad tale, Unworshipped. Chapter one, Routines End Here, is live. Be warned: what seems mundane may be the start of something far more sinister! </p>
+        <p class="text-base md:text-lg font-sans text-gray-900 leading-relaxed mb-6">
+  I’m stepping into the dark with my very first Wattpad tale, Unworshipped. Chapter one, Routines End Here, is live. Be warned: what seems mundane may be the start of something far more sinister!
+</p>
+
         <span class="text-xs text-gray-500">June 2024</span>
       </article>
       <!-- Add more journal entries as needed -->
