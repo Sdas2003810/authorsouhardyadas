@@ -6,16 +6,35 @@
   <title>Author Souhardya das</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
 </head>
 <body class="bg-white text-gray-900 font-sans">
-  <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-200 bg-white sticky top-0 z-10">
+  <nav class="bg-white border-b border-gray-200 px-6 py-4 sticky top-0 z-10" x-data="{ open: false }">
+  <div class="flex justify-between items-center">
     <div class="text-2xl font-serif text-green-900">The Quill</div>
-    <ul class="flex space-x-6 text-lg">
+    <!-- Hamburger button, only on mobile screens -->
+    <button @click="open = !open" class="md:hidden flex items-center px-2 py-1 border rounded text-green-900 border-green-900 focus:outline-none">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path :class="{'hidden':open, 'inline-flex':!open }" class="inline-flex" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        <path :class="{'hidden':!open, 'inline-flex':open }" class="hidden" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+    <!-- Navbar links, normal view -->
+    <ul class="hidden md:flex space-x-6 text-lg">
       <li><a href="#home" class="hover:text-green-700">Home</a></li>
       <li><a href="#books" class="hover:text-green-700">Books</a></li>
       <li><a href="#journal" class="hover:text-green-700">Journal</a></li>
     </ul>
-  </nav>
+  </div>
+  <!-- Mobile menu, appears when hamburger is clicked -->
+  <ul x-show="open" class="md:hidden mt-2 space-y-2 text-lg bg-white border-t border-gray-200 px-2 py-4">
+    <li><a href="#home" class="block w-full hover:text-green-700">Home</a></li>
+    <li><a href="#books" class="block w-full hover:text-green-700">Books</a></li>
+    <li><a href="#journal" class="block w-full hover:text-green-700">Journal</a></li>
+  </ul>
+</nav>
+
 
   <section id="home" class="flex flex-col items-center py-12 px-4">
     <img src="resources/profile pic.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full shadow-lg mb-4">
