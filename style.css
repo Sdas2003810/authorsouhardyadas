@@ -100,40 +100,5 @@ nav {
   border-radius: 0.5rem;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
-/* Dark mode styles */
-html.dark body {
-  background-color: #121212;
-  color: #e0e0e0;
-}
-
-html.dark nav {
-  background-color: #1f1f1f;
-  border-color: #333;
-  box-shadow: none;
-}
-
-html.dark footer {
-  background-color: #1f1f1f;
-  color: #bbb;
-}
-
-html.dark section {
-  background-color: #222;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-html.dark a {
-  color: #bbf7d0;
-}
-
-html.dark a:hover {
-  color: #86efac;
-}
-
-html.dark .text-green-900, 
-html.dark .text-green-800 {
-  color: #86efac;
-}
-
 
 
