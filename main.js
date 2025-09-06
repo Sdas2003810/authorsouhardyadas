@@ -12,7 +12,7 @@ document.querySelector('#home').appendChild(button);
 // Add click event listener to trigger animation and text change
 button.addEventListener('click', () => {
   // Change heading text and ensure it's centered with Tailwind classes
-  heading.textContent = 'Hello my Wattpad readers!';
+  heading.textContent = 'Hello My Wattpad Readers!';
   heading.classList.add('text-center', 'w-full');
 
   // Prepare the emoji span for animation
