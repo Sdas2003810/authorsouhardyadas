@@ -1,4 +1,4 @@
-// Select the main heading element
+ // Select the main heading element
 const heading = document.querySelector('h1');
 
 // Create a new button element with waving emoji inside a span
