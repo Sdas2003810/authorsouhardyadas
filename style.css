@@ -80,4 +80,9 @@ nav {
   animation: wave 2s ease-in-out;
 }
 
+#books .grid {
+  min-height: 450px; /* increase height as needed */
+}
+
+
 
