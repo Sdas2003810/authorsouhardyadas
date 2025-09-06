@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Author Souhardya das</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-white text-gray-900 font-sans">
+  <nav class="flex justify-between items-center px-6 py-4 border-b border-gray-200 bg-white sticky top-0 z-10">
+    <div class="text-2xl font-serif text-green-900">The Quill</div>
+    <ul class="flex space-x-6 text-lg">
+      <li><a href="#home" class="hover:text-green-700">Home</a></li>
+      <li><a href="#books" class="hover:text-green-700">Books</a></li>
+      <li><a href="#journal" class="hover:text-green-700">Journal</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="flex flex-col items-center py-12 px-4">
+    <img src="resources/profile pic.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full shadow-lg mb-4">
+    <h1 class="text-4xl font-serif text-green-900 mb-2">Souhardya Das</h1>
+    <p class="text-lg max-w-xl text-center font-sans">I'm Souhardya Das, a physics and math student. Academics have taught me how to think carefully, solve problems step by step, and really care about getting things right—which is how I approach my creative projects too.
+Besides academics, I've started writing fiction on <a href="https://www.wattpad.com" class="text-green-800 underline">Wattpad</a>. I like to focus on character-driven horror with a strong atmosphere. To me, science and storytelling are both just ways to explore complicated stuff. One uses logic, and the other uses imagination and real-life experiences.</p>
+  </section>
+
+  <section id="books" class="py-12 px-4 bg-gray-50">
+    <h2 class="text-3xl font-serif text-green-900 mb-8 text-center">Books</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+      <a href="https://www.wattpad.com/story/401145497-unworshipped target="_blank" class="flex flex-col items-center">
+        <img src="resources/Unworshipped.jpg" alt="Book 1" class="w-40 h-56 object-cover rounded shadow">
+        <span class="mt-2 text-lg font-serif">Unworshipped</span>
+      </a>
+      
+      <!-- Add more books as needed -->
+    </div>
+  </section>
+
+  <section id="journal" class="py-12 px-4">
+    <h2 class="text-3xl font-serif text-green-900 mb-8 text-center">Journal</h2>
+    <div class="max-w-2xl mx-auto space-y-8">
+      <article class="border-b pb-6">
+        <h3 class="text-xl font-serif text-green-800 mb-2">First Wattpad Story Published!</h3>
+        <p class="text-base font-sans text-gray-700">I’m stepping into the dark with my very first Wattpad tale, Unworshipped. Chapter one, Routines End Here, is live. Be warned: what seems mundane may be the start of something far more sinister! </p>
+        <span class="text-xs text-gray-500">June 2024</span>
+      </article>
+      <!-- Add more journal entries as needed -->
+    </div>
+  </section>
+
+  <footer class="py-6 text-center text-gray-500 text-sm">
+    &copy; 2025 Souhardya Das. All rights reserved. No part of this website or its content may be reproduced, distributed, or transmitted in any form without written permission from the author.
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
